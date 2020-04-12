@@ -32,6 +32,8 @@ for i in range(len(date)):
     for n in range(len(hw)):
         homework.append((hw[n].text, date[i]))
 
+driver.quit()
+
 # print homework
 if(printdata == True):
     print("-------------------------------------------")
