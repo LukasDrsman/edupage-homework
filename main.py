@@ -1,11 +1,8 @@
 # import stuff
-from bs4 import BeautifulSoup
-import requests
 from config import *
 from functions import *
 from selenium import webdriver
 import time
-import pprint
 
 # init
 options = webdriver.ChromeOptions()
