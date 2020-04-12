@@ -2,6 +2,7 @@
 from config import *
 from functions import *
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import time
 
 # init
@@ -15,11 +16,11 @@ homework = []
 
 # login
 driver.get(website+"/login/")
-username = driver.find_element_by_id("login_Login_1e1")
-password = driver.find_element_by_id("login_Login_1e2")
+username = driver.find_element_by_name("username")
+password = driver.find_element_by_name("password")
 username.send_keys(uname)
 password.send_keys(passwd)
-driver.find_element_by_class_name("skgdFormSubmit").click()
+driver.find_element_by_xpath("//input[@type='submit']").click()
 
 # parse homework
 driver.get(website+"/exam/?")
