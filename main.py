@@ -14,7 +14,7 @@ date = dateGen(ndays)
 homework = []
 
 # login
-driver.get("https://seslm.edupage.org/login/")
+driver.get(website+"/login/")
 username = driver.find_element_by_id("login_Login_1e1")
 password = driver.find_element_by_id("login_Login_1e2")
 username.send_keys(uname)
@@ -22,7 +22,7 @@ password.send_keys(passwd)
 driver.find_element_by_class_name("skgdFormSubmit").click()
 
 # parse homework
-driver.get("https://seslm.edupage.org/exam/?")
+driver.get(website+"/exam/?")
 time.sleep(1)
 
 for i in range(len(date)):
@@ -32,7 +32,8 @@ for i in range(len(date)):
         homework.append((hw[n].text, date[i]))
 
 # print homework
-print("-------------------------------------------")
-for i in range(len(homework)):
-    print(homework[i][0] + "\n" + homework[i][1])
+if(printdata == True):
     print("-------------------------------------------")
+    for i in range(len(homework)):
+        print(homework[i][0] + "\n" + homework[i][1])
+        print("-------------------------------------------")
