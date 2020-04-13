@@ -36,7 +36,7 @@ driver.quit()
 
 # print homework
 if(printdata == True):
-    print("-------------------------------------------")
+    print(separator)
     for i in range(len(homework)):
         print(homework[i][0] + "\n" + homework[i][1])
-        print("-------------------------------------------")
+        print(separator)

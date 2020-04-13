@@ -12,3 +12,6 @@ website = 'https://seslm.edupage.org'
 
 # 2 print or not 2 print homework into terminal
 printdata = True
+
+# homework separator
+separator = "-------------------------------------------"
