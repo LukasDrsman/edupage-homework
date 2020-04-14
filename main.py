@@ -6,11 +6,19 @@ from selenium.webdriver.common.by import By
 import time
 
 # init
-options = webdriver.ChromeOptions()
-options.add_argument('--ignore-certificate-errors')
-options.add_argument('--incognito')
-options.add_argument('--headless')
-driver = webdriver.Chrome("/usr/lib/chromium/chromedriver", options = options)
+if(wdriver == "Firefox"):
+    options = webdriver.FirefoxOptions()
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--incognito')
+    options.add_argument('--headless')
+    driver = webdriver.Firefox(options = options)
+if(wdriver == "Chrome"):
+    options = webdriver.ChromeOptions()
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--incognito')
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(cdpath, options = options)
+
 date = dateGen(ndays)
 homework = []
 

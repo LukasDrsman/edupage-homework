@@ -15,3 +15,9 @@ printdata = True
 
 # homework separator
 separator = "-------------------------------------------"
+
+# which webdriver to use ["Firefox" or "Chrome"]
+wdriver = "Firefox"
+
+# path to chromedriver
+cdpath = "/usr/lib/chromium/chromedriver"
