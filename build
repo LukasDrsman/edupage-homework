@@ -1,0 +1,11 @@
+#!/bin/sh
+
+dir=$(pwd)
+echo "Installing edupage-homework (eduhw)..."
+if [ -d "/usr/share/eduhw" ]; then
+  sudo sh -c " cp $dir/* /usr/share/eduhw/ "
+else
+  sudo sh -c " mkdir /usr/share/eduhw; cp $dir/* /usr/share/eduhw/ "
+fi
+cd /usr/share/eduhw
+sudo sh -c " rm -rf .git; rm README.md; rm config-example.py; cp $dir/.run/eduhw /usr/bin"
