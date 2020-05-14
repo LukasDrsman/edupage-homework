@@ -22,9 +22,9 @@ Modes:
 ```
 eduhw [mode]
 ```
-| Mode          | Function                                    |
-| ------------- |--------------                              |
-| normal        | assignments separated by chosen separators  |
-| simple        | assignments separated by empty newlines     |
-| minimal       | assignments take up 1 line                  |
+| Mode (long)   |Mode (short)| Function                                    |
+| ------------- |:----------:|--------------                               |
+| normal        |            | assignments separated by chosen separators  |
+| simple        | s          | assignments separated by empty newlines     |
+| minimal       | m          | assignments take up 1 line                  |
 <br>

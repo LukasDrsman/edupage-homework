@@ -52,7 +52,7 @@ try:
 except:
     mode = "normal"
     
-if(mode == "minimal"):
+if(mode == "minimal" or mode == "m"):
     for i in range(len(homework)):
         print(homework[i][0] + " " + homework[i][1])
 if(mode == "normal"):
@@ -60,6 +60,6 @@ if(mode == "normal"):
     for i in range(len(homework)):
         print(homework[i][0] + "\n" + homework[i][1])
         print(separatorchar*int(columns))
-if(mode == "simple"):
+if(mode == "simple" or mode == "s"):
     for i in range(len(homework)):
         print(homework[i][0] + "\n" + homework[i][1] + "\n")
