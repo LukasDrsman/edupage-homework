@@ -25,7 +25,7 @@ eduhw [mode]
 ```
 | Mode (long)   |Mode (short)| Function                                    |
 | ------------- |:----------:|--------------                               |
-| normal        |            | assignments separated by chosen separators  |
+| normal        |            | assignments separated by chosen separator   |
 | simple        | s          | assignments separated by empty newlines     |
 | minimal       | m          | assignments take up 1 line                  |
 <br>
