@@ -4,6 +4,7 @@ Requirements:
 * sh
 * python3
 * linux (or macOS)
+* edupage account
 * selenium
 * chrome or firefox
 * geckodriver (when using firefox)
