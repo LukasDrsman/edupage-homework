@@ -1,16 +1,18 @@
 # edupage-homework (eduhw)
 ## Usage
-Requirements:
-* sh
-* python3
-* linux (or macOS)
+#### Requirements:
 * edupage account
-* selenium
+* python3
+  * selenium
 * chrome or firefox
 * geckodriver (when using firefox)
 
-<br/> <br/>
-Install and run:
+#### Install selenium:
+```sh
+pip install selenium --user
+```
+
+#### Install and run:
 ```sh
 git clone https://github.com/LukasDrsman/edupage-homework.git
 cd edupage-homework
@@ -19,7 +21,7 @@ cd edupage-homework
 eduhw
 ```
 <br/><br/>
-Modes:
+#### Modes:
 ```
 eduhw [mode]
 ```
