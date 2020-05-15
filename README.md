@@ -20,7 +20,7 @@ cd edupage-homework
 ./build
 eduhw
 ```
-<br/><br/>
+
 #### Modes:
 ```
 eduhw [mode]
