@@ -1,5 +1,5 @@
 # edupage-homework (eduhw)
-## Usage
+## Installation
 #### Requirements:
 * edupage account
 * python3
@@ -21,7 +21,7 @@ cd edupage-homework
 eduhw
 ```
 
-#### Modes:
+## Usage:
 ```
 eduhw [mode]
 ```
