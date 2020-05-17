@@ -2,7 +2,7 @@
 ## Installation
 #### Requirements:
 * edupage account
-* python3
+* python3 with pip
   * selenium
 * chrome or firefox
 * geckodriver (when using firefox)
