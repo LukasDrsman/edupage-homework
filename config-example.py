@@ -1,20 +1,14 @@
-# change name from config-example.py to config.py
+# configuration file for yt-livechat
+# change relevant options and rename this file to config.py
 
-# credentials
-uname = "username"
-passwd = "password"
+# video id, https://www.youtube.com/watch?v=[yt_chat_id]
+yt_chat_id = "7NOSDKb0HlU"
 
-# show homework for n ammount of days
-ndays = 1
+# default arduino uno port
+port = "/dev/ttyACM0"
 
-# your school's website
-website = 'https://seslm.edupage.org'
+# delay between characters (in seconds)
+char_delay = 0.15
 
-# homework separator character
-separatorchar = "-"
-
-# which webdriver to use ["Firefox" or "Chrome"]
-wdriver = "Firefox"
-
-# path to chromedriver
-cdpath = "/usr/lib/chromium/chromedriver"
+# delay between messages (in seconds)
+chat_delay = 2
