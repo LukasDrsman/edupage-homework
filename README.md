@@ -17,7 +17,7 @@ pip install selenium --user
 git clone https://github.com/LukasDrsman/edupage-homework.git
 cd edupage-homework
 # edit and rename config-example.py to config.py
-./build
+sudo ./install
 eduhw
 ```
 
