@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/share/eduhw/eduhw $*
+/usr/lib/eduhw/eduhw $*

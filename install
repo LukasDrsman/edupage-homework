@@ -3,13 +3,13 @@
 dir=$(pwd)
 echo "Installing edupage-homework (eduhw)..."
 if [ -d "/usr/share/eduhw" ]; then
-  cp $dir/*.py /usr/share/eduhw/
-  cp $dir/eduhw /usr/share/eduhw/
+  cp $dir/*.py /usr/lib/eduhw/
+  cp $dir/eduhw /usr/lib/eduhw/
 else
-  mkdir /usr/share/eduhw
-  cp $dir/*.py /usr/share/eduhw/
-  cp $dir/eduhw /usr/share/eduhw/
+  mkdir /usr/lib/eduhw
+  cp $dir/*.py /usr/lib/eduhw/
+  cp $dir/eduhw /usr/lib/eduhw/
 fi
-cd /usr/share/eduhw
+cd /usr/lib/eduhw
 rm config-example.py
 cp $dir/.run/eduhw /usr/bin
