@@ -2,7 +2,7 @@
 
 dir=$(pwd)
 echo "Installing edupage-homework (eduhw)..."
-if [ -d "/usr/share/eduhw" ]; then
+if [ -d "/usr/lib/eduhw" ]; then
   cp $dir/*.py /usr/lib/eduhw/
   cp $dir/eduhw /usr/lib/eduhw/
 else
@@ -12,4 +12,4 @@ else
 fi
 cd /usr/lib/eduhw
 rm config-example.py
-cp $dir/.run/eduhw /usr/bin
+cp $dir/bin/eduhw /usr/bin

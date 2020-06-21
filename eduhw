@@ -3,12 +3,12 @@
 import os
 import sys
 from config import *
-from functions import *
+from dategen import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-# init
+# initialize webdriver
 if(wdriver == "Firefox"):
     options = webdriver.FirefoxOptions()
     options.add_argument('--ignore-certificate-errors')
@@ -25,7 +25,7 @@ if(wdriver == "Chrome"):
 date = dateGen(ndays)
 homework = []
 
-# login
+# log into edupage
 driver.get(website+"/login/")
 username = driver.find_element_by_name("username")
 password = driver.find_element_by_name("password")
@@ -33,10 +33,11 @@ username.send_keys(uname)
 password.send_keys(passwd)
 driver.find_element_by_xpath("//input[@type='submit']").click()
 
-# parse homework
+# parse retrieved homework
 driver.get(website+"/exam/?")
 time.sleep(1)
 
+# select homework within date range
 for i in range(len(date)):
     path = "//li[@data-date='"+date[i]+"']/div[@class='hwItemInner']/div[@class='hwCnt']/div[@class='hwTitle']"
     hw = driver.find_elements_by_xpath(path)
@@ -45,21 +46,21 @@ for i in range(len(date)):
 
 driver.quit()
 
-# print homework
+# stdout homework
 rows, columns = os.popen('stty size', 'r').read().split()
 try:
     mode = str((sys.argv)[1])
 except:
-    mode = "normal"
+    mode = "--normal"
     
-if(mode == "minimal" or mode == "m"):
+if(mode == "--minimal" or mode == "-m"):
     for i in range(len(homework)):
         print(homework[i][0] + " " + homework[i][1])
-if(mode == "normal"):
+if(mode == "--normal"):
     print(separatorchar*int(columns))
     for i in range(len(homework)):
         print(homework[i][0] + "\n" + homework[i][1])
         print(separatorchar*int(columns))
-if(mode == "simple" or mode == "s"):
+if(mode == "--simple" or mode == "-s"):
     for i in range(len(homework)):
         print(homework[i][0] + "\n" + homework[i][1] + "\n")
