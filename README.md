@@ -29,5 +29,5 @@ eduhw [mode]
 | ------------- |:-----------:|--------------                               |
 |               |             | simple output                               |
 | --formatted   | -f          | formatted output                            |
-| --minimal     | -m          | 1 line per assignment                       |
+| --minimal     | -m          | 1 assignment per line                       |
 <br>
