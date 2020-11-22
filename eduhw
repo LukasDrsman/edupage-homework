@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-# import stuff
-import os
+# module imports
 import sys
 from config import Config
 import dategen as dg
 from colors import *
 from datetime import datetime
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 import time
 
 # initialize webdriver
